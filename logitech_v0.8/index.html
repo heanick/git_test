@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 다국어 지원 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 반응형 웹에서 모바일을 위한 뷰포트 세팅 -->
+    <title>marshall-heanick</title>
+    <!-- 브라우저 타이틀 -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <!-- 마우스 커서 바꾸기 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .wrapper {
+      width: 100%;
+      height: 100vh;
+      /* background: #f5f5f5; */
+      cursor: url("img/cursor1.png"), auto;
+    }
+  </style>
+  <body>
+    <!-- 마우스 커서 -->
+    <!-- <div class="wrapper"></div> -->
+    <script>
+      document.addEventListener("mousemove", function (e) {
+        // Create a new trail element
+        var trail = document.createElement("div");
+        trail.style.position = "absolute";
+        trail.style.height = "40px";
+        trail.style.width = "40px";
+        trail.style.border = "2px solid #333";
+        trail.style.background = "transparent";
+        trail.style.borderRadius = "50%";
+        trail.style.pointerEvents = "none"; // To prevent the element from interfering with the mouse events
+        trail.style.transform = "translate(-50%, -50%)"; // To center the element at the mouse position
+        trail.style.zIndex = "9999";
+
+        // Set the position of the trail element to the current mouse position
+        trail.style.left = e.pageX + 10 + "px";
+        trail.style.top = e.pageY + 10 + "px";
+
+        // Add the trail element to the document
+        document.body.appendChild(trail);
+
+        // Remove the trail element after a short time
+        setTimeout(function () {
+          document.body.removeChild(trail);
+        }, 100);
+      });
+    </script>
+    <!-- 마우스 커서 -->
+
+    <div class="wrapper">
+      <header>
+        <div class="gnb">
+          <img src="img/header_logo.png" alt="" />
+          <div class="gnb-icon">
+            <a href=""><img src="img/header-icon-sound.png" alt="" /></a>
+            <a href="">
+              <img src="img/header-icon-off.png" alt="" />
+            </a>
+            <a href="menu.html"
+              ><img src="img/header-icon-menu.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </header>
+
+      <section class="section01">
+        <div class="section01_container">
+          <video src="video/Motif II A.N.C.mp4" autoplay loop muted></video>
+        </div>
+      </section>
+
+      <section class="section02">
+        <div class="section02_container">
+          <img src="img/section02/background-1.png" alt="" />
+          <img
+            class="scroll"
+            src="img/section02/스크롤다운.png"
+            alt=""
+          />
+          <img class="HEARTED" src="img/section02/HEARTED.png" alt="" />
+          <div class="wave">
+            <button class="wave__btn" type="button"></button>
+            <div class="wave__container">
+              <div class="wave__circle"></div>
+              <div class="wave__circle"></div>
+              <!-- <div class="wave__circle"></div> -->
+            </div>
+          </div>
+
+          <img class="product" src="img/section02/product.png" alt="" />
+          <img class="a-stout" src="img/section02/A STOUT-.png" alt="" />
+
+          <img class="HERO" src="img/section02/HERO.png" alt="" />
+          <img class="section02-text" src="img/section02/text.png" alt="" />
+          <img
+            class="section02-maintext"
+            src="img/section02/마샬-타이포 1.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="section03">
+        <img src="img/section03/intro-background-1.png" alt="" />
+        <img class="backtext" src="img/section03/1960.png" alt="" />
+        <img class="BUSINESS" src="img/section03/BUSINESS.png" alt="" />
+        <img class="FOR" src="img/section03/FOR.png" alt="" />
+        <img class="marshall" src="img/section03/marshall.png" alt="" />
+        <img class="text03" src="img/section03/text03.png" alt="" />
+        <img class="OPEN" src="img/section03/OPEN.png" alt="" />
+
+        <img class="product03" src="img/section03/product03.png" alt="" />
+        <img class="side-text03" src="img/section03/side-text03.png" alt="" />
+      </section>
+
+      <section class="section04">
+        <img
+          class="section04-back"
+          src="img/section04/intro-background-1.png"
+          alt=""
+        />
+        <img
+          class="section04-text"
+          src="img/section04/사운드효과04.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section05">
+        <img src="img/section05/back.png" alt="" />
+        <img class="poto01" src="img/section05/poto01.png" alt="" />
+        <img class="poto02" src="img/section05/poto02.png" alt="" />
+        <img
+          class="section05-text-left"
+          src="img/section05/section05-text-left.png"
+          alt=""
+        />
+        <img
+          class="section05-text-right"
+          src="img/section05/section05-text-right.png"
+          alt=""
+        />
+        <img
+          class="section05-text-bottom"
+          src="img/section05/section05-text-bottom.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section06">
+        <img src="img/section06/back.png" alt="" />
+
+        <!-- <img class="poto03" src="img/section06/poto03.png" alt="" />
+        <img class="poto04" src="img/section06/poto04.png" alt="" />
+        <img class="poto05" src="img/section06/poto05.png" alt="" />
+        <img class="poto06" src="img/section06/poto06.png" alt="" />
+        <img class="poto07" src="img/section06/poto07.png" alt="" />
+        <img class="poto08" src="img/section06/poto08.png" alt="" /> -->
+
+        <div class="scroll-img">
+          <img src="img/section06/scroll-img.png" alt="" />
+        </div>
+
+        <img
+          class="section06-text-left"
+          src="img/section05/section05-text-left.png"
+          alt=""
+        />
+        <img
+          class="section06-text-right"
+          src="img/section05/section05-text-right.png"
+          alt=""
+        />
+        <img
+          class="section06-text-bottom"
+          src="img/section05/section05-text-bottom.png"
+          alt=""
+        />
+        <img class="singer" src="img/section06/singer.png" alt="" />
+      </section>
+
+      <section class="section07">
+        <img class="back07" src="img/section07/back07.png" alt="" />
+        <img class="fantastic" src="img/section07/fantastic.png" alt="" />
+        <img class="for" src="img/section07/FOR.png" alt="" />
+        <img class="product07" src="img/section07/product07.png" alt="" />
+        <img
+          class="product07_big"
+          src="img/section07/product07_big.png"
+          alt=""
+        />
+        <img class="sound" src="img/section07/sound.png" alt="" />
+        <img class="speakers" src="img/section07/speakers.png" alt="" />
+        <img
+          class="section07-text"
+          src="img/section07/section07-text.png"
+          alt=""
+        />
+        <img
+          class="side-text07"
+          src="img/section07/section07-side-text.png"
+          alt=""
+        />
+      </section>
+      <!-- 가로스크롤 시작 -->
+      <div class="horizontal-scroll">
+        <div class="horizontal">
+          <section class="section08">
+            <img src="img/section08/back08.png" alt="" />
+            <img
+              class="section-text08"
+              src="img/section08/section-text.png"
+              alt=""
+            />
+            <img class="product08" src="img/section08/product08.png" alt="" />
+          </section>
+
+          <section class="section09">
+            <img src="img/section09/back09.png" alt="" />
+            <img
+              class="section09-img1"
+              src="img/section09/section09-img1.png"
+              alt=""
+            />
+            <img
+              class="section09-img2"
+              src="img/section09/section09-img2.png"
+              alt=""
+            />
+            <img
+              class="section09-img3"
+              src="img/section09/section09-img3.png"
+              alt=""
+            />
+            <img
+              class="section09-text01"
+              src="img/section09/section09-text01.png"
+              alt=""
+            />
+            <img
+              class="section09-text02"
+              src="img/section09/section09-text02.png"
+              alt=""
+            />
+            <img
+              class="section09-speaker"
+              src="img/section09/speaker.png"
+              alt=""
+            />
+            <img
+              class="section09-possible"
+              src="img/section09/possible.png"
+              alt=""
+            />
+            <img
+              class="section09-youwant"
+              src="img/section09/you want.png"
+              alt=""
+            />
+            <img class="section09-as" src="img/section09/as.png" alt="" />
+            <img class="section09-sound" src="img/section09/sound.png" alt="" />
+            <img
+              class="section09-amplfy"
+              src="img/section09/AMPLIFY.png"
+              alt=""
+            />
+          </section>
+
+          <section class="section10">
+            <img src="img/section10/back10.png" alt="" />
+            <video
+              class="section10-video"
+              src="video/마샬스피커_제품소개영상.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
+          </section>
+        </div>
+      </div>
+
+      <section class="section11">
+        <img src="img/section11/section11-back.png" alt="" />
+        <img
+          class="section11-product"
+          src="img/section11/section11-product.png"
+          alt=""
+        />
+        <img
+          class="section11-sound"
+          src="img/section11/section11-sound.png"
+          alt=""
+        />
+        <img
+          class="section11-the"
+          src="img/section11/section11-the.png"
+          alt=""
+        />
+        <img
+          class="section11-SIGNATURE"
+          src="img/section11/section11-SIGNATURE.png"
+          alt=""
+        />
+        <img
+          class="section11-headphones"
+          src="img/section11/section11-headphones.png"
+          alt=""
+        />
+        <img
+          class="section11-text"
+          src="img/section11/section11-text.png"
+          alt=""
+        />
+        <img
+          class="section11-sidetext"
+          src="img/section11/section11-sidetext.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section12">
+        <img src="img/section12/section12-back.png" alt="" />
+        <img
+          class="section12-text02"
+          src="img/section12/section12-text02.png"
+          alt=""
+        />
+
+        <img
+          class="section12-product"
+          src="img/section12/section12-product.png"
+          alt=""
+        />
+        <img
+          class="section12-product02"
+          src="img/section12/section12-product02.png"
+          alt=""
+        />
+        <img
+          class="section12-product03"
+          src="img/section12/section12-product03.png"
+          alt=""
+        />
+        <img
+          class="section12-text01"
+          src="img/section12/section12-text01.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section13">
+        <video
+          class="section13-video"
+          src="video/마샬이어폰섹션.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+      </section>
+
+      <section class="section14">
+        <img
+          class="section14-product"
+          src="img/section14/section14-product.png"
+          alt=""
+        />
+        <img
+          class="section14-wave"
+          src="img/section14/section14-wave.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section15">
+        <img
+          class="section15-FRONT"
+          src="img/section15/section15-FRONT.png"
+          alt=""
+        />
+        <img class="section15-it" src="img/section15/section15-it.png" alt="" />
+        <img
+          class="section15-MOTIF"
+          src="img/section15/section15-MOTIF.png"
+          alt=""
+        />
+        <img
+          class="section15-ROW"
+          src="img/section15/section15-ROW SOUND.png"
+          alt=""
+        />
+        <img
+          class="section15-text01"
+          src="img/section15/section15-text01.png"
+          alt=""
+        />
+        <img class="section15-text02" src="img/section15/section15-text02.png" alt="" />
+        <video
+          class="section15-video"
+          src="video/마샬이어폰영상-크기줄인거.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+      </section>
+
+      <section class="section16">
+        <img src="img/section16/section16-back.png" alt="" />
+        <img class="section16-LP" src="img/section16/section16-LP.png" alt="" />
+        <img
+          class="section16-LP-pin"
+          src="img/section16/section16-LP pin.png"
+          alt=""
+        />
+        <img class="section16-music" src="img/section16/music!.png" alt="" />
+        <img
+          class="section16-let-play"
+          src="img/section16/Let's play.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section17">
+        <img src="img/section17/section17-back.png" alt="" />
+        <img
+          class="section17-text"
+          src="img/section17/section17-text.png"
+          alt=""
+        />
+        <img class="section17-LP" src="img/section17/section17-LP.png" alt="" />
+        <img
+          class="section17-men"
+          src="img/section17/section17-men.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section18">
+        <img src="img/section18/section18-back.png" alt="" />
+        <img
+          class="section18-text"
+          src="img/section18/section18-text.png"
+          alt=""
+        />
+        <img class="section18-LP" src="img/section18/section18-LP.png" alt="" />
+        <img
+          class="section18-men"
+          src="img/section18/section18-men.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section19">
+        <img src="img/section19/section19-back.png" alt="" />
+        <img
+          class="section19-text"
+          src="img/section19/section19-text.png"
+          alt=""
+        />
+        <img class="section19-LP" src="img/section19/section19-LP.png" alt="" />
+        <img
+          class="section19-men"
+          src="img/section19/section19-men.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section20">
+        <img
+          class="section20-img01"
+          src="img/section20/section20-img01.png"
+          alt=""
+        />
+        <img
+          class="section20-img02"
+          src="img/section20/section20-img02.png"
+          alt=""
+        />
+        <img
+          class="section20-img03"
+          src="img/section20/section20-img03.png"
+          alt=""
+        />
+        <img
+          class="section20-text01"
+          src="img/section20/section20-text01.png"
+          alt=""
+        />
+        <img
+          class="section20-text02"
+          src="img/section20/section20-text02.png"
+          alt=""
+        />
+        <img
+          class="section20-text03"
+          src="img/section20/section20-text03.png"
+          alt=""
+        />
+      </section>
+
+      <section class="section21">
+        <img
+          class="section21-main"
+          src="img/section21/section21-main.png"
+          alt=""
+        />
+        <img
+          class="section21-scrolltop"
+          src="img/section21/section21-scrolltop.png"
+          alt=""
+        />
+        <img
+          class="section21-text"
+          src="img/section21/section21-text.png"
+          alt=""
+        />
+        <img
+          class="section21-subtext"
+          src="img/section21/section21-subtext.png"
+          alt=""
+        />
+      </section>
+
+      <footer>
+        <img class="footer-text" src="img/footer/footer-text.png" alt="" />
+        <img class="footer-logo" src="img/footer/footer-logo.png" alt="" />
+        <img
+          class="footer-logo-bottom"
+          src="img/footer/footer-logo-bottom.png"
+          alt=""
+        />
+        <div class="footer-sns">
+          <img
+            class="footer-icon-fa"
+            src="img/footer/footer-icon-fa.png"
+            alt=""
+          />
+          <img
+            class="footer-icon-in"
+            src="img/footer/footer-icon-in.png"
+            alt=""
+          />
+
+          <img
+            class="footer-icon-yo"
+            src="img/footer/footer-icon-yo.png"
+            alt=""
+          />
+        </div>
+      </footer>
+    </div>
+
+    <!-- 스피커 움직이는거  -->
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ripples effect cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script>
+      gsap.fromTo(
+        ".product img",
+        {
+          // duration: 1.5,
+          delay: 1,
+          scale: 1,
+          filter: "blur(3px)",
+        },
+        {
+          scale: 1.02,
+          filter: "blur(0px)",
+          // opacity: 1,
+          repeat: -1,
+          yoyo: true,
+          ease: "elastic",
+          stagger: {
+            amount: 1.5,
+          },
+        }
+      );
+    </script>
+    <script>
+      var x = $(".product").width() / 2;
+      var y = $(".hero").height() / 2;
+      var w_x = $(".wave").width() / 2;
+      var w_y = $(".wave").height() / 2;
+
+      $(".wave").css({
+        top: y - w_y,
+        left: x - w_x,
+      });
+    </script>
+
+    <!-- 스크롤 타이밍에 맞춰서 넘어가는거  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.rawgit.com/coderitual/odoo/feature/codevember16/lib/odoo.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <!-- 스크롤 타이밍에 맞춰서 넘어가는거 여기까지 -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/scrollTrigger.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

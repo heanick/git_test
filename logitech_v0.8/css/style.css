@@ -1,0 +1,973 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background: #000;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  _border-bottom: 1px solid #757575;
+  position: fixed;
+  left: 0;
+  top: 0;
+  _background: #000000;
+  z-index: 9999;
+}
+
+.gnb-icon {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb-icon img {
+  margin-right: 5px;
+}
+
+.gnb-icon img:nth-child(2) {
+  margin-right: 50px;
+}
+.section01 {
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+}
+
+.section01_container {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  z-index: 999;
+}
+
+.gnb {
+  width: 1640px;
+  height: 90px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* section 02 */
+
+.section02 {
+  width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  _overflow: hidden;
+}
+
+.section02_container {
+  width: 1920px;
+  height: 100vh;
+  position: relative;
+  _overflow: hidden;
+}
+
+.scroll {
+  position: absolute;
+  top: 642px;
+  left: 1770px;
+}
+
+.scroll {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.product {
+  position: absolute;
+  top: 318px;
+  left: -132px;
+}
+.a-stout {
+  position: absolute;
+  top: 344px;
+  left: 775px;
+}
+.HEARTED {
+  position: absolute;
+  top: 430px;
+  left: 776px;
+}
+.HERO {
+  position: absolute;
+  top: 406px;
+  left: 1086px;
+}
+.section02-text {
+  position: absolute;
+  top: 711px;
+  left: 1051px;
+}
+.section02-maintext {
+  position: absolute;
+  top: 408px;
+  left: 792px;
+}
+
+/* 스피커 흔들리는 움직임 */
+
+/* 스피커 뒤에 음파 */
+.wave {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.wave__circle {
+  position: absolute;
+  background-color: transparent;
+  border: 10px solid var(--circleColor);
+  border-radius: 50%;
+  box-shadow: inset var(--shadowShift) var(--shadowShift) var(--shadowBlur)
+      rgba(245, 245, 245, 0.809),
+    var(--shadowShift) var(--shadowShift) var(--shadowBlur)
+      rgba(241, 241, 241, 0.654),
+    inset calc(var(--shadowShift) * -1) calc(var(--shadowShift) * -1)
+      var(--shadowBlur) rgba(223, 223, 223, 0.721),
+    calc(var(--shadowShift) * -1) calc(var(--shadowShift) * -1)
+      var(--shadowBlur) rgba(242, 242, 242, 0.651);
+  filter: blur(2px);
+
+  animation-name: ripple;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0.2, 0.8, 1);
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.wave__container .wave__circle:nth-child(2) {
+  animation-delay: 2s;
+}
+
+@keyframes ripple {
+  0% {
+    top: 450px;
+    left: 450px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+  }
+}
+
+/* section03 */
+
+.section03 {
+  width: 1920px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.backtext {
+  position: absolute;
+  top: 197px;
+  left: 70px;
+}
+.BUSINESS {
+  position: absolute;
+  top: 491px;
+  left: 507px;
+}
+.FOR {
+  position: absolute;
+  top: 427px;
+  left: 508px;
+}
+.marshall {
+  position: absolute;
+  top: 583px;
+  left: 255px;
+}
+.text03 {
+  position: absolute;
+  top: 487px;
+  left: 63px;
+}
+.OPEN {
+  position: absolute;
+  top: 394px;
+  left: 221px;
+}
+.product03 {
+  position: absolute;
+  top: 344px;
+  left: 785px;
+}
+
+.side-text03 {
+  position: absolute;
+  top: 1016px;
+  left: 1665px;
+}
+
+/* section04 */
+.section04 {
+  width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.section04-text {
+  position: absolute;
+  top: 540px;
+  left: 1807px;
+}
+
+/* section05 */
+.section05 {
+  width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.poto01 {
+  position: absolute;
+  top: -517px;
+  left: 1927px;
+}
+.poto02 {
+  position: absolute;
+  top: -241px;
+  left: -718px;
+}
+.section05-text-bottom {
+  position: absolute;
+  top: 958px;
+  left: 709px;
+}
+.section05-text-left {
+  position: absolute;
+  top: 307px;
+  left: 62px;
+}
+
+.section05-text-right {
+  position: absolute;
+  top: 762px;
+  left: 1791px;
+}
+
+/* section06 */
+.section06 {
+  width: 1920px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.singer {
+  position: absolute;
+  top: 238px;
+  left: 1082px;
+  animation: singer 0.6s infinite;
+}
+.scroll-img {
+  position: absolute;
+  top: 1180px;
+  left: 400px;
+  opacity: 0;
+}
+.poto03 {
+  position: absolute;
+  top: 83px;
+  left: 771px;
+}
+.poto04 {
+  position: absolute;
+  top: 586px;
+  left: 1166px;
+}
+.poto05 {
+  position: absolute;
+  top: 618px;
+  left: 455px;
+}
+.poto06 {
+  position: absolute;
+  top: 1225px;
+  left: 1031px;
+}
+.poto07 {
+  position: absolute;
+  top: 1225px;
+  left: 734px;
+}
+.poto08 {
+  position: absolute;
+  top: 1225px;
+  left: 1082px;
+}
+
+.section06-text-left {
+  position: absolute;
+  top: 307px;
+  left: 62px;
+}
+.section06-text-right {
+  position: absolute;
+  top: 762px;
+  left: 1791px;
+}
+.section06-text-bottom {
+  position: absolute;
+  top: 958px;
+  left: 709px;
+}
+
+/* sectiom07 */
+.section07 {
+  width: 1920px;
+  _height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.fantastic {
+  position: absolute;
+  top: 309px;
+  left: 958px;
+}
+.for {
+  position: absolute;
+  top: 443px;
+  left: 989px;
+}
+.product07 {
+  position: absolute;
+  top: 219px;
+  left: 548px;
+}
+.product07_big {
+  position: absolute;
+  top: 900px;
+  left: 331px;
+}
+.sound {
+  position: absolute;
+  top: 517px;
+  left: 700px;
+}
+.speakers {
+  position: absolute;
+  top: 506px;
+  left: 1130px;
+}
+.section07-text {
+  position: absolute;
+  top: 620px;
+  left: 548px;
+}
+.side-text07 {
+  position: absolute;
+  top: 1116px;
+  left: 1548px;
+}
+
+/* section 08 */
+.section08 {
+  width: 1920px;
+  _height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section-text08 {
+  position: absolute;
+  top: 64px;
+  left: 589px;
+}
+.product08 {
+  position: absolute;
+  top: 172px;
+  left: 304px;
+}
+
+@keyframes singer {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* section 09 */
+.section09 {
+  width: 1920px;
+  _height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  _overflow: hidden;
+}
+
+.section09-img1 {
+  position: absolute;
+  top: 307px;
+  left: 70px;
+}
+.section09-img2 {
+  position: absolute;
+  top: 432px;
+  left: 480px;
+}
+.section09-img3 {
+  position: absolute;
+  top: 513px;
+  left: 1100px;
+}
+.section09-text01 {
+  position: absolute;
+  top: 313px;
+  left: 480px;
+}
+.section09-text02 {
+  position: absolute;
+  top: 313px;
+  left: 750px;
+}
+.section09-speaker {
+  position: absolute;
+  top: 263px;
+  left: 1050px;
+}
+.section09-possible {
+  position: absolute;
+  top: 340px;
+  left: 1150px;
+}
+.section09-youwant {
+  position: absolute;
+  top: 426px;
+  left: 1070px;
+}
+.section09-as {
+  position: absolute;
+  top: 433px;
+  left: 1510px;
+}
+.section09-sound {
+  position: absolute;
+  top: 658px;
+  left: -100px;
+}
+.section09-amplfy {
+  position: absolute;
+  top: 764px;
+  left: 30px;
+}
+
+/* section 10 */
+.section10 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  _overflow: hidden;
+  height: 100vh;
+}
+
+.section10-video {
+  position: absolute;
+  left: -100px;
+  top: 0;
+}
+
+/* 가로스크롤 */
+.horizontal-scroll {
+  overflow: hidden;
+  width: 100%; /* 수정: 가로 크기를 100%로 변경 */
+  position: relative;
+  margin: 0 auto;
+}
+
+.horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content; /* 수정: 가로 크기를 100%로 변경 */
+  scroll-snap-type: x mandatory; /* 추가: 스크롤 스냅 기능 활성화 */
+}
+
+.horizontal > section {
+  width: 100%; /* 수정: 가로 크기를 100%로 변경 */
+  scroll-snap-align: start; /* 추가: 스크롤 스냅 기능을 적용할 위치 지정 */
+}
+
+/* section 11 */
+.section11 {
+  width: 1920px;
+  _height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  _overflow: hidden;
+}
+
+.section11-product {
+  position: absolute;
+  left: -148px;
+  top: -165px;
+}
+.section11-sound {
+  position: absolute;
+  left: 915px;
+  top: 377px;
+}
+.section11-the {
+  position: absolute;
+  left: 1154px;
+  top: 488px;
+}
+.section11-SIGNATURE {
+  position: absolute;
+  left: 1255px;
+  top: 480px;
+}
+.section11-headphones {
+  position: absolute;
+  left: 879px;
+  top: 531px;
+}
+.section11-text {
+  position: absolute;
+  left: 1316px;
+  top: 358px;
+}
+.section11-sidetext {
+  position: absolute;
+  left: 115px;
+  top: 926px;
+}
+
+/* section 12 */
+.section12 {
+  width: 1920px;
+  _height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.section12-product {
+  position: absolute;
+  left: 306px;
+  top: 416px;
+}
+
+.section12-product02 {
+  position: absolute;
+  left: 256px;
+  top: 116px;
+  opacity: 0;
+}
+.section12-product03 {
+  position: absolute;
+  left: 256px;
+  top: 116px;
+  opacity: 0;
+}
+.section12-text01 {
+  position: absolute;
+  left: 11px;
+  top: 756px;
+}
+.section12-text02 {
+  position: absolute;
+  left: -85px;
+  top: 882px;
+}
+
+/* section13 */
+
+.section13 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+/* section14 */
+
+.section14 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 100px;
+  height: 100vh;
+}
+.section14-product {
+  position: absolute;
+  left: -142px;
+  top: -40px;
+  opacity: 80%;
+}
+.section14-wave {
+  position: absolute;
+  left: -81px;
+  top: 395px;
+}
+
+/* section15 */
+
+.section15 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.section15-video {
+  position: absolute;
+  left: 930px;
+  top: 90px;
+}
+
+.section15-FRONT {
+  position: absolute;
+  left: 179px;
+  top: 274px;
+}
+.section15-it {
+  position: absolute;
+  left: 670px;
+  top: 422px;
+}
+.section15-MOTIF {
+  position: absolute;
+  left: 318px;
+  top: 316px;
+}
+.section15-ROW {
+  position: absolute;
+  left: 157px;
+  top: 440px;
+}
+.section15-text01 {
+  position: absolute;
+  left: 241px;
+  top: 605px;
+}
+
+.section15-text02 {
+  position: absolute;
+  left: 240px;
+  top: 692px;
+}
+
+/* section 16 */
+.section16 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  _height: 100vh;
+}
+.section16-LP {
+  position: absolute;
+  left: 604px;
+  top: 220px;
+}
+
+.section16-LP {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section16-LP-pin {
+  position: absolute;
+  left: 1060px;
+  top: 189px;
+}
+.section16-music {
+  position: absolute;
+  left: 124px;
+  top: 535px;
+}
+.section16-let-play {
+  position: absolute;
+  left: 1369px;
+  top: 537px;
+}
+
+/* section 17 */
+.section17 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  _height: 100vh;
+}
+.section17-LP {
+  position: absolute;
+  left: 711px;
+  top: 93px;
+}
+
+.section17-LP {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.section17-men {
+  position: absolute;
+  left: 308px;
+  top: 322px;
+}
+.section17-text {
+  position: absolute;
+  left: 200px;
+  top: 232px;
+}
+
+/* section 18 */
+.section18 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  _height: 100vh;
+}
+.section18-LP {
+  position: absolute;
+  left: 711px;
+  top: 93px;
+}
+
+.section18-LP {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section18-men {
+  position: absolute;
+  left: 353px;
+  top: 373px;
+}
+.section18-text {
+  position: absolute;
+  left: 210px;
+  top: 334px;
+}
+
+/* section 19 */
+.section19 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  _height: 100vh;
+}
+
+.section19-LP {
+  position: absolute;
+  left: 711px;
+  top: 93px;
+}
+.section19-LP {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section19-men {
+  position: absolute;
+  left: 363px;
+  top: 386px;
+}
+.section19-text {
+  position: absolute;
+  left: 196px;
+  top: 365px;
+}
+
+/* section 20 */
+.section20 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.section20-img01 {
+  position: absolute;
+  left: 227px;
+  top: 419px;
+}
+.section20-img02 {
+  position: absolute;
+  left: 940px;
+  top: 431px;
+}
+.section20-img03 {
+  position: absolute;
+  left: 1627px;
+  top: 419px;
+}
+.section20-text01 {
+  position: absolute;
+  left: 120px;
+  top: 305px;
+}
+.section20-text02 {
+  position: absolute;
+  left: 904px;
+  top: 305px;
+}
+.section20-text03 {
+  position: absolute;
+  left: 1578px;
+  top: 305px;
+}
+
+/* section 21 */
+.section21 {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  height: 1080px;
+}
+.section21-main {
+  position: absolute;
+  left: 286px;
+  top: 171px;
+}
+.section21-scrolltop {
+  position: absolute;
+  left: 1733px;
+  top: 1016px;
+}
+
+.section21-scrolltop {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section21-text {
+  position: absolute;
+  left: -65px;
+  top: 599px;
+}
+.section21-subtext {
+  position: absolute;
+  left: 632px;
+  top: 890px;
+}
+
+/* footer */
+footer {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  height: 500px;
+}
+.footer-text {
+  position: absolute;
+  left: 103px;
+  top: 400px;
+}
+.footer-logo {
+  position: absolute;
+  left: 870px;
+  top: 300px;
+}
+.footer-logo-bottom {
+  position: absolute;
+  left: 720px;
+  top: 400px;
+}
+
+.footer-sns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon-fa {
+  position: absolute;
+  left: 1550px;
+  top: 350px;
+}
+.footer-icon-in {
+  position: absolute;
+  left: 1650px;
+  top: 350px;
+}
+.footer-icon-yo {
+  position: absolute;
+  left: 1750px;
+  top: 350px;
+}
